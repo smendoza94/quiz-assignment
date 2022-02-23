@@ -57,7 +57,7 @@ body {
     flex-direction: column;
 }
 
-.quizContainer button {
+.btn {
     padding: 10px;
     margin: 5px;
     width: 2fr;
@@ -72,4 +72,24 @@ body {
 
 button:hover {
     background-color: rgb(175, 120, 175);
+}
+
+/* classes to use in js "adding/remove classes"  */
+.hide {
+    display: none;
+}
+
+.btn-correct {
+    background: green;
+}
+
+.btn-wrong {
+    background: rgb(129, 0, 0);
+}
+
+/* change with of quiz wider on a smaller screen */
+@media screen and (max-width: 650px) {
+    .quizContainer {
+        width: 90vw;
+    }
 }

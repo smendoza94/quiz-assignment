@@ -13,11 +13,13 @@
 </header>
 <body>
     <div class="quizContainer">
-        <h1>Coding Quiz Challenge</h1>
-        <p>Try to answer the following coding related questions within the time limit.
-        Keep in mind that incorrect answers will penalize your score!</p>
-        <div class="optionsContainer">
-            <button id="startBtn">Start Quiz</button>
+        <div id="question-container" class="show">
+            <h1>Coding Quiz Challenge</h1>
+            <p id="question">Try to answer the following coding related questions within the time limit.
+            <br><br>Keep in mind that incorrect answers will penalize your score!</p>      
+            <div id="answer-buttons" class="optionsContainer"> 
+                <button id="startBtn" class="start-btn btn">Start Quiz</button>
+            </div>
         </div>
     </div>
     <script src="./assests/js/script.js"></script>
