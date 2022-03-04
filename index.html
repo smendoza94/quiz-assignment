@@ -9,18 +9,20 @@
 </head>
 <header class="headContainer">
     <button id="highScoreBtn">View High Scores</button>
-    <p id="timer">Score: 100</p>
+    <p id="timer">Score:    </p>
 </header>
 <body>
     <div class="quizContainer">
-        <div id="question-container" class="show">
-            <h1>Coding Quiz Challenge</h1>
-            <p id="question">Try to answer the following coding related questions within the time limit.
-            <br><br>Keep in mind that incorrect answers will penalize your score!</p>      
-            <div id="answer-buttons" class="optionsContainer"> 
-                <button id="startBtn" class="start-btn btn">Start Quiz</button>
-            </div>
+        <div id="question-container">
+            <h1 id="quiz-title">Coding Quiz Challenge</h1>
+            <p id="question">Try to answer the following coding related questions within the time limit. Keep in mind that incorrect answers will penalize your score!</p>      
+            <div id="answer-buttons" class="optionsContainer"></div>
+            <button id="startBtn" class="start-btn btn">Start Quiz</button>
         </div>
+        <form id="score-form" class="hide">
+            <input type="text" name="score-name" placeholder="Enter Your Name">
+            <button class="btn" id="save-score" type="submit">Submit</button>
+        </form>
     </div>
     <script src="./assests/js/script.js"></script>
 </body>
